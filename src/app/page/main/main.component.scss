@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+
 :host {
     flex: auto;
     display: flex;
@@ -10,4 +12,91 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.descript{
+    position: absolute;
+    top: 20rem;
+    left: 50rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .descript{
+        position: absolute;
+        top: 45rem;
+        left: 5rem;
+    }
+}
+
+p, h1{
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.slideshow{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.middle{
+    position: absolute;
+    top: 25rem;
+    left: 25rem;
+    transform: translate(-50%, -50%);
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    height: 100%;
+    width: 100%;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid#fff;
+    margin: 0.2rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background-color: #fff;
+}
+
+input[name="radioInput"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+#r1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .img1{
+    margin-left: -20%;
+}
+
+#r3:checked ~ .img1{
+    margin-left: -40%;
 }
