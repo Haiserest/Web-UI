@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+
+
+:host {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descript{
+    position: absolute;
+    top: 20rem;
+    right: 50rem;
+}
+
+p{
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
