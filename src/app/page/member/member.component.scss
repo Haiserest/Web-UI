@@ -1,0 +1,16 @@
+.mem, table{
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    align-items: center;
+    width: fit-content;
+    min-width: 100%;
+    overflow-x: auto;
+}
+
+.avatar{
+    height: 100px;
+    width: 100px;
+}
